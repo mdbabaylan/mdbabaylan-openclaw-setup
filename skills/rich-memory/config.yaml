@@ -1,0 +1,18 @@
+# rich-memory configuration
+
+memory_paths:
+  people: memory/people
+  projects: memory/projects
+  preferences: memory/preferences
+  daily: memory/
+
+retrieval:
+  default_mode: semantic
+  top_k: 3
+  max_chars_per_result: 2000
+
+# Optional: embedding config (for future RAG layer)
+embeddings:
+  enabled: false
+  model: text-embedding-3-small
+  cache_dir: .cache/embeddings
